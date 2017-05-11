@@ -27,7 +27,7 @@ class QueryController @Inject() (database: Database) extends Controller {
 
   val queryForm: Form[Query] = Form(
     mapping(
-      "query" -> nonEmptyText
+      "query" -> text
     )(Query.apply)(Query.unapply)
   )
 
