@@ -1,0 +1,7 @@
+@(form: Form[Query])(implicit messages: Messages)
+
+<h1>Query</h1>
+
+@helper.form(action = routes.QueryController.query()) {
+@helper.inputText(form("query"))
+}

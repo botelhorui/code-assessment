@@ -1,0 +1,21 @@
+@(message: String, style: String = "scala")
+
+@defining(play.core.PlayVersion.current) { version =>
+
+<link rel="stylesheet" media="screen" href="/@@documentation/resources/style/main.css">
+
+<div id="content" class="wrapper doc">
+    <article>
+        <h1>Welcome to my demo</h1>
+        <p>
+            @message
+        </p>
+        <p>
+            <a href="@routes.QueryController.index">Query</a>
+        </p>
+        <p>
+            <a href="@routes.ReportsController.index">Reports</a>
+        </p>
+    </article>
+</div>
+}
